@@ -6,9 +6,9 @@
 
 - *Jaccard’s Coefficient*. The Jaccard Coefficient, also known as Jaccard index or Jaccard similarity coefficient, is a statistic measure used for comparing similarity of sample sets. It is usually denoted as J(x,y) where x and y represent two different nodes in a network. In link prediction, all the neighbours of a node are treated as a set and the prediction is done by computing and ranking the similarity of the neighbour set of each node pair. This method is based on Common Neighbours method and its complexity is also O(Nk^2) . The mathematical expression of this method is as follows  
 
-$$
-\left\lvert  \frac{ \Gamma(x)   \cap   \Gamma (y)}{ \Gamma(x)    \cup    \Gamma (y)}  \right\rvert
-$$
+<p align="center">
+  <a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;\left\lvert&space;\frac{&space;\Gamma(x)&space;\cap&space;\Gamma&space;(y)}{&space;\Gamma(x)&space;\cup&space;\Gamma&space;(y)}&space;\right\rvert" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\LARGE&space;\left\lvert&space;\frac{&space;\Gamma(x)&space;\cap&space;\Gamma&space;(y)}{&space;\Gamma(x)&space;\cup&space;\Gamma&space;(y)}&space;\right\rvert" title="\LARGE \left\lvert \frac{ \Gamma(x) \cap \Gamma (y)}{ \Gamma(x) \cup \Gamma (y)} \right\rvert" /></a>
+</p>
 
 - *Preferential Attachment*. Due to the assumption that the node with high degree is more likely to get new links, preferential attachment was introduced as a prediction method. The degree of both nodes in a pair needs to be considered for the prediction. Same as common neighbours, this is also a basic prediction method which is usually used as a baseline to measure the performance of other prediction methods. This method will calculate similarity score for each pair of nodes within the network rather than only the neighbour of nodes; thus the complexity of preferential attachment is O(N^2K^2) . This method can be expressed as
 
